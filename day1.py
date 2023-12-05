@@ -1,6 +1,6 @@
 import re
 
-with open('day1input.txt', 'r') as f:
+with open('1.txt', 'r') as f:
     lista = f.read().splitlines()
     
 def first_and_last_number(line):
@@ -40,3 +40,6 @@ for line in lista:
     tot += first_and_last_number(multiple_replace(valid,line))
     
 print(tot)
+
+print(first_and_last_number(multiple_replace(valid,lista[0])))
+print(multiple_replace(valid,lista[0]))
